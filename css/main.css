@@ -6,117 +6,138 @@ body {
 }
 
 /* Neon colours */
-    .redneon-text { text-shadow: 0 0 10px #e47369, 0 0 15px #e47369, 0 0 20px #e47369, 0 0 80px #e71f0f, 0 0 100px #e71f0f; color: #e47369 !important; }
-    .redneon-symbols { text-shadow: 0 0 10px #e47369, 0 0 15px #e47369, 0 0 30px #e71f0f, 0 0 40px #e71f0f; color: #e47369 !important; }
+.redneon-text {
+    text-shadow: 0 0 10px #e47369, 0 0 15px #e47369, 0 0 20px #e47369, 0 0 80px #e71f0f, 0 0 100px #e71f0f; color: #e47369 !important;
+}
+.redneon-symbols {
+    text-shadow: 0 0 10px #e47369, 0 0 15px #e47369, 0 0 30px #e71f0f, 0 0 40px #e71f0f;
+    color: #e47369 !important;
+}
 
-    .yellowneon-text { text-shadow: 0 0 10px #fafd99, 0 0 15px #fafd99, 0 0 20px #fafd99, 0 0 80px #fae723, 0 0 100px #fae723; color: #fafd99 !important; }
-    .yellowneon-symbols { text-shadow: 0 0 10px #fafd99, 0 0 15px #fafd99, 0 0 30px #fae723, 0 0 40px #fae723; color: #fafd99 !important; }
+.yellowneon-text {
+    text-shadow: 0 0 10px #fafd99, 0 0 15px #fafd99, 0 0 20px #fafd99, 0 0 80px #fae723, 0 0 100px #fae723; color: #fafd99 !important;
+}
+.yellowneon-symbols {
+    text-shadow: 0 0 10px #fafd99, 0 0 15px #fafd99, 0 0 30px #fae723, 0 0 40px #fae723;
+    color: #fafd99 !important;
+}
 
-    .greenneon-text { text-shadow: 0 0 10px #9ff97e, 0 0 15px #9ff97e, 0 0 20px #9ff97e, 0 0 80px #5bff1f, 0 0 100px #5bff1f; color: #9ff97e !important; }
-    .greenneon-symbols { text-shadow: 0 0 10px #9ff97e, 0 0 15px #9ff97e, 0 0 30px #5bff1f, 0 0 40px #5bff1f; color: #9ff97e !important; }
+.greenneon-text {
+    text-shadow: 0 0 10px #9ff97e, 0 0 15px #9ff97e, 0 0 20px #9ff97e, 0 0 80px #5bff1f, 0 0 100px #5bff1f; color: #9ff97e !important;
+}
+.greenneon-symbols {
+    text-shadow: 0 0 10px #9ff97e, 0 0 15px #9ff97e, 0 0 30px #5bff1f, 0 0 40px #5bff1f;
+    color: #9ff97e !important;
+}
 
-    .blueneon-text { text-shadow: 0 0 10px #5d8cf7, 0 0 15px #5d8cf7, 0 0 20px #5d8cf7, 0 0 80px #1258f7, 0 0 100px #1258f7; color: #5d8cf7 !important; }
-    .blueneon-symbols { text-shadow: 0 0 10px #5d8cf7, 0 0 15px #5d8cf7, 0 0 30px #1258f7, 0 0 40px #1258f7; color: #5d8cf7 !important; }
+.blueneon-text {
+    text-shadow: 0 0 10px #5d8cf7, 0 0 15px #5d8cf7, 0 0 20px #5d8cf7, 0 0 80px #1258f7, 0 0 100px #1258f7; color: #5d8cf7 !important;
+}
+.blueneon-symbols {
+    text-shadow: 0 0 10px #5d8cf7, 0 0 15px #5d8cf7, 0 0 30px #1258f7, 0 0 40px #1258f7;
+    color: #5d8cf7 !important;
+}
 
 /* Header section */
-    #header {
-        text-align: center;
-        margin-top: 25vh;
+#header {
+    display: none;
+    text-align: center;
+    margin-top: 25vh;
+}
+
+/* Main Title */
+.prompt {
+    font-size: 6em;
+    font-weight: 900;
+}
+
+.hacked {
+    font-size: 6em;
+}
+
+.cursor {
+    font-size: 6em;
+    font-weight: 900;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 720px) {
+    .prompt {
+        font-size: 15vw;
     }
 
-    /* Main Title */
-        .prompt {
-            font-size: 6em;
-            font-weight: 900;
-        }
+    .hacked {
+        font-size: 15vw;
+    }
 
-        .hacked {
-            font-size: 6em;
-        }
+    .cursor {
+        font-size: 15vw;
+    }
+}
 
-        .cursor {
-            font-size: 6em;
-            font-weight: 900;
-        }
+@media only screen and (max-width: 400px) {
+    .prompt, .hacked, .cursor {
+        font-size: 11vw;
+    }
+}
 
-        @media only screen and (min-width: 400px) and (max-width: 720px) {
-            .prompt {
-                font-size: 15vw;
-            }
+/* One line description */
+.description {
+    font-size: 2em;
+    font-weight: 200;
+}
 
-            .hacked {
-                font-size: 15vw;
-            }
+@media only screen and (min-width: 400px) and (max-width: 720px) {
+    .description {
+        font-size: 4vw;
+    }
+}
 
-            .cursor {
-                font-size: 15vw;
-            }
-        }
+@media only screen and (max-width: 400px) {
+    .description {
+        margin-top: 4vw;
+        font-size: 8vw;
+    }
+}
 
-        @media only screen and (max-width: 400px) {
-            .prompt, .hacked, .cursor {
-                font-size: 11vw;
-            }
-        }
+/* Bottom links */
+.sponsorship_request {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 2em;
+}
 
-    /* One line description */
-        .description {
-            font-size: 2em;
-            font-weight: 200;
-        }
+.sponsor_prompt {
+    display: inline-block;
+    font-size: 2em;
+    font-weight: 200;
+}
 
-        @media only screen and (min-width: 400px) and (max-width: 720px) {
-            .description {
-                font-size: 4vw;
-            }
-        }
+@media only screen and (min-width: 400px) and (max-width: 720px) {
+    .sponsor_prompt {
+        font-size: 4vw;
+    }
+}
 
-        @media only screen and (max-width: 400px) {
-            .description {
-                margin-top: 4vw;
-                font-size: 8vw;
-            }
-        }
+@media only screen and (max-width: 400px) {
+    .sponsor_prompt {
+        font-size: 4vw;
+    }
+}
 
-    /* Bottom links */
-        .sponsorship_request {
-            position: absolute;
-            width: 100%;
-            left: 0;
-            bottom: 2em;
-        }
+.button {
+    display: inline-block;
+    text-decoration: none;
+    border: 1pt solid white;
+    color: white;
+    padding: 7pt;
+    border-radius: 6pt;
+    font-size: 0.8em;
+    font-weight: 200;
+}
 
-        .sponsor_prompt {
-            display: inline-block;
-            font-size: 2em;
-            font-weight: 200;
-        }
-
-        @media only screen and (min-width: 400px) and (max-width: 720px) {
-            .sponsor_prompt {
-                font-size: 4vw;
-            }
-        }
-
-        @media only screen and (max-width: 400px) {
-            .sponsor_prompt {
-                font-size: 4vw;
-            }
-        }
-
-        .button {
-            display: inline-block;
-            text-decoration: none;
-            border: 1pt solid white;
-            color: white;
-            padding: 7pt;
-            border-radius: 6pt;
-            font-size: 0.8em;
-            font-weight: 200;
-        }
-
-        .button:hover {
-            background-color: white;
-            color: #16703d;
-            text-decoration: none;
-        }
+.button:hover {
+    background-color: white;
+    color: #16703d;
+    text-decoration: none;
+}

@@ -33,6 +33,7 @@ function chooseBackgroundColour() {
     d3.select('body .hacked').classed(colour.name + 'neon-text', true);
     d3.select('body .prompt').classed(colour.name + 'neon-symbols', true);
     d3.select('body .cursor').classed(colour.name + 'neon-symbols', true);
+    d3.select('#header').style('display', 'block');
 }
 
 startCursorBlinking();
