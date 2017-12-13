@@ -160,6 +160,7 @@ body {
 .divider, .divider-dark {
     display: inline-block;
     position: relative;
+    width: 100%;
 }
 
 .divider {
@@ -203,16 +204,14 @@ body {
     text-transform: uppercase;
 }
 
+.faq-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
 .faq-column-left, .faq-column-right {
     width: 40%;
-}
-
-.faq-column-left {
-    float: left;
-}
-
-.faq-column-right {
-    float: right;
 }
 
 ul {
