@@ -26,13 +26,12 @@ function getRandomInt(min, max) {
 function chooseBackgroundColour() {
     var colour = colours[getRandomInt(0, 4)];
 
-    d3.select('body').style('color', colour.colour);
-    d3.selectAll('.button.accent')
-        .style('color', colour.colour)
-        .style('border', '1pt solid ' + colour.colour);
-    d3.select('body .hacked').classed(colour.name + 'neon-text', true);
-    d3.select('body .prompt').classed(colour.name + 'neon-symbols', true);
-    d3.select('body .cursor').classed(colour.name + 'neon-symbols', true);
+    d3.selectAll('.accent').style('color', colour.colour);
+    d3.selectAll('.button.accent').style('border', '1pt solid ' + colour.colour);
+    d3.selectAll('.background-accent').style('background-color', colour.colour);
+    d3.select('.hacked').classed(colour.name + 'neon-text', true);
+    d3.select('.prompt').classed(colour.name + 'neon-symbols', true);
+    d3.select('.cursor').classed(colour.name + 'neon-symbols', true);
     d3.select('#header').style('display', 'block');
 }
 
