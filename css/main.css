@@ -2,6 +2,7 @@ body {
     background-color: #171d24;
     color: white;
     overflow: none;
+    font-family: Roboto;
 }
 
 /* Neon colours */
@@ -13,7 +14,7 @@ body {
 
     .greenneon-text { text-shadow: 0 0 10px #9ff97e, 0 0 15px #9ff97e, 0 0 20px #9ff97e, 0 0 80px #5bff1f, 0 0 100px #5bff1f; color: #9ff97e !important; }
     .greenneon-symbols { text-shadow: 0 0 10px #9ff97e, 0 0 15px #9ff97e, 0 0 30px #5bff1f, 0 0 40px #5bff1f; color: #9ff97e !important; }
-    
+
     .blueneon-text { text-shadow: 0 0 10px #5d8cf7, 0 0 15px #5d8cf7, 0 0 20px #5d8cf7, 0 0 80px #1258f7, 0 0 100px #1258f7; color: #5d8cf7 !important; }
     .blueneon-symbols { text-shadow: 0 0 10px #5d8cf7, 0 0 15px #5d8cf7, 0 0 30px #1258f7, 0 0 40px #1258f7; color: #5d8cf7 !important; }
 
@@ -54,7 +55,7 @@ body {
 
         @media only screen and (max-width: 400px) {
             .prompt, .hacked, .cursor {
-                font-size: 11vw; 
+                font-size: 11vw;
             }
         }
 
@@ -99,7 +100,7 @@ body {
 
         @media only screen and (max-width: 400px) {
             .sponsor_prompt {
-                font-size: 4vw; 
+                font-size: 4vw;
             }
         }
 
@@ -119,4 +120,3 @@ body {
             color: #16703d;
             text-decoration: none;
         }
-        
