@@ -101,10 +101,7 @@ body {
 
 /* Bottom links */
 .sponsorship_request {
-    position: absolute;
     width: 100%;
-    left: 0;
-    bottom: 2em;
 }
 
 .sponsor_prompt {
@@ -132,7 +129,7 @@ body {
     color: white;
     padding: 7pt;
     border-radius: 6pt;
-    font-size: 0.8em;
+    font-size: 1.5em;
     font-weight: 200;
 }
 
@@ -140,4 +137,19 @@ body {
     background-color: white;
     color: #16703d;
     text-decoration: none;
+}
+
+#mlh-trust-badge {
+    display: block;
+    max-width: 100px;
+    min-width: 60px;
+    position: fixed;
+    right: 2%;
+    top: 0;
+    width: 10%;
+    z-index: 10000;
+}
+
+#mlh-trust-badge img {
+    width: 100%;
 }

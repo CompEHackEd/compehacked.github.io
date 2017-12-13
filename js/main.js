@@ -27,7 +27,7 @@ function chooseBackgroundColour() {
     var colour = colours[getRandomInt(0, 4)];
 
     d3.select('body').style('color', colour.colour);
-    d3.select('.button')
+    d3.selectAll('.button.accent')
         .style('color', colour.colour)
         .style('border', '1pt solid ' + colour.colour);
     d3.select('body .hacked').classed(colour.name + 'neon-text', true);
