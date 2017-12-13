@@ -133,6 +133,7 @@ body {
     border-radius: 6pt;
     font-size: 1.5em;
     font-weight: 200;
+    -webkit-transition: all 500ms ease;
 }
 
 .button:hover {
