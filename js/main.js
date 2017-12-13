@@ -37,3 +37,9 @@ function chooseBackgroundColour() {
 
 startCursorBlinking();
 chooseBackgroundColour();
+
+d3.selectAll('p.question')
+    .on('click', function() {
+        var answer = d3.select(this.parentNode).select('p.answer');
+        answer.style('display', answer.style('display') === 'none' ? 'block' : 'none');
+    });

@@ -1,6 +1,5 @@
 body {
     background-color: #171d24;
-    color: white;
     overflow: none;
     font-family: Roboto;
     margin: 0;
@@ -134,6 +133,7 @@ body {
     font-size: 1.5em;
     font-weight: 200;
     -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
 }
 
 .button:hover {
@@ -157,8 +157,17 @@ body {
     width: 100%;
 }
 
-.divider {
+.divider, .divider-dark {
+    display: inline-block;
     position: relative;
+}
+
+.divider {
+    background-color: white;
+}
+
+.divider-dark {
+    color: white;
 }
 
 .marker-left, .marker-right {
@@ -173,18 +182,16 @@ body {
 }
 
 .words {
-    background-color: white;
     padding: 30px;
 }
 
-.section-title {
-    color: black;
+.words .section-title {
     text-align: center;
     font-size: 2em;
     text-transform: uppercase;
 }
 
-p {
+.words > p {
     color: black;
     padding: 0 100px;
     font-weight: 300;
@@ -194,4 +201,34 @@ p {
     color: black;
     padding: 0 100px;
     text-transform: uppercase;
+}
+
+.faq-column-left, .faq-column-right {
+    width: 40%;
+}
+
+.faq-column-left {
+    float: left;
+}
+
+.faq-column-right {
+    float: right;
+}
+
+ul {
+    list-style: none;
+}
+
+p.question {
+    cursor: pointer;
+    user-select: none;
+}
+
+p.answer {
+    display: none;
+    font-weight: 300;
+}
+
+.question-section .small-title {
+    padding: 0;
 }
