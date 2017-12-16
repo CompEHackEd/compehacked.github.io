@@ -1,5 +1,4 @@
 body {
-    background-color: #171d24;
     overflow: none;
     font-family: Roboto;
     margin: 0;
@@ -42,7 +41,7 @@ body {
 #header {
     display: none;
     text-align: center;
-    margin-top: 25vh;
+    padding-top: 25vh;
     height: 70vh;
 }
 
@@ -168,6 +167,7 @@ body {
 }
 
 .divider-dark {
+    background-color: #171d24;
     color: white;
 }
 
@@ -182,17 +182,17 @@ body {
     right: 0;
 }
 
-.words {
+.section-content {
     padding: 30px;
 }
 
-.words .section-title {
+.section-title {
     text-align: center;
     font-size: 2em;
     text-transform: uppercase;
 }
 
-.words > p {
+.section-content > p {
     color: black;
     padding: 0 100px;
     font-weight: 300;
@@ -230,4 +230,12 @@ p.answer {
 
 .question-section .small-title {
     padding: 0;
+}
+
+#map-section {
+    background-color: white;
+}
+
+#map {
+    margin: 50px;
 }
