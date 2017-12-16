@@ -156,6 +156,14 @@ body {
     width: 100%;
 }
 
+/* sections */
+.marker-left, .marker-right {
+    width: 5vw;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
 .divider, .divider-dark {
     display: inline-block;
     position: relative;
@@ -169,13 +177,6 @@ body {
 .divider-dark {
     background-color: #171d24;
     color: white;
-}
-
-.marker-left, .marker-right {
-    width: 5vw;
-    position: absolute;
-    top: 0;
-    bottom: 0;
 }
 
 .marker-right {
@@ -204,6 +205,17 @@ body {
     text-transform: uppercase;
 }
 
+@media only screen and (max-width: 1080px) {
+    .marker-left, .marker-right {
+        width: 0;
+    }
+
+    .section-content > p, .small-title {
+        padding: 0;
+    }
+}
+
+/* FAQ */
 .faq-container {
     display: flex;
     justify-content: center;
@@ -232,10 +244,33 @@ p.answer {
     padding: 0;
 }
 
+@media only screen and (max-width: 1080px) {
+    .faq-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .faq-column-left, .faq-column-right {
+        width: 100%;
+    }
+
+    ul {
+        padding: 0;
+    }
+}
+
+/* map */
 #map-section {
     background-color: white;
 }
 
 #map {
     margin: 50px;
+}
+
+@media only screen and (max-width: 1080px) {
+    #map {
+        margin: 0;
+        margin-top: 30px;
+    }
 }
