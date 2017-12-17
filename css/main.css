@@ -274,3 +274,65 @@ p.answer {
         margin-top: 30px;
     }
 }
+
+/* sponsors */
+.sponsor-tier {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0em;
+}
+
+.sponsor {
+    flex-grow: 1;
+    margin: 2em;
+}
+
+.sponsor img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.sponsor.gold {
+    flex-basis: 25%;
+    max-width: 25%;
+}
+
+.sponsor.silver {
+    flex-basis: 15%;
+    max-width: 15%;
+}
+.sponsor.bronze {
+    flex-basis: 15%;
+    max-width: 15%;
+}
+
+@media only screen and (max-width: 1080px) {
+    .sponsors {
+        margin: 0;
+    }
+
+    .sponsor_tier {
+        margin-bottom: 2em;
+    }
+
+    .sponsor {
+        margin: 1em;
+    }
+
+    .sponsor.gold {
+        flex-basis: 38%;
+        max-width: 38%;
+    }
+
+    .sponsor.silver {
+        flex-basis: 22%;
+        max-width: 22%;
+    }
+
+    .sponsor.bronze {
+        flex-basis: 15%;
+        max-width: 15%;
+    }
+}
