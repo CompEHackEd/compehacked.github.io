@@ -82,8 +82,9 @@ body {
 
 /* One line description */
 .description {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 300;
+    text-transform: uppercase;
 }
 
 @media only screen and (min-width: 400px) and (max-width: 720px) {
@@ -129,15 +130,16 @@ body {
     color: white;
     padding: 7pt;
     border-radius: 6pt;
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: 200;
     -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
+    text-transform: uppercase;
 }
 
 .button:hover {
-    background-color: white;
-    color: #16703d;
+    background-color: #37404a;
+    color: white;
     text-decoration: none;
 }
 
@@ -200,9 +202,19 @@ body {
 }
 
 .small-title {
+    font-size: larger;
     color: black;
     padding: 0 100px;
     text-transform: uppercase;
+}
+
+.accent-on-white {
+    padding: 0 5px 2px;
+    border-radius: 4px;
+    top: -1px;
+    margin: 0 3px 0 1px;
+    background: #37404a;
+    width: fit-content;
 }
 
 @media only screen and (max-width: 1080px) {
