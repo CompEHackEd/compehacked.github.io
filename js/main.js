@@ -29,6 +29,7 @@ function chooseBackgroundColour() {
     var colour = colours[getRandomInt(0, 4)];
 
     d3.selectAll('.accent').style('color', colour.colour);
+    d3.selectAll('a').style('color', colour.colour);
     d3.selectAll('.button.accent').style('border', '1pt solid ' + colour.colour);
     d3.selectAll('.background-accent').style('background-color', colour.colour);
     d3.select('.hacked').classed(colour.name + 'neon-text', true);
