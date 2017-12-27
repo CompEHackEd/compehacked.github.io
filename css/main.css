@@ -249,7 +249,7 @@ p.question {
     user-select: none;
 }
 
-p.answer {
+.answer {
     display: none;
     font-weight: 300;
 }
