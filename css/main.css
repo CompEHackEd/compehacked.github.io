@@ -313,6 +313,11 @@ p.question {
     max-height: 100%;
 }
 
+.sponsor.title {
+    flex-basis: 35%;
+    max-width: 35%;
+}
+
 .sponsor.gold {
     flex-basis: 25%;
     max-width: 25%;
@@ -338,6 +343,11 @@ p.question {
 
     .sponsor {
         margin: 1em;
+    }
+
+    .sponsor.title {
+        flex-basis: 50%;
+        max-width: 50%;
     }
 
     .sponsor.gold {
