@@ -82,6 +82,9 @@ body {
 
 /* One line description */
 .description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 1.5em;
     font-weight: 300;
     text-transform: uppercase;
