@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <link rel="stylesheet" href="css/main.css" />
-
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108448957-2"></script>
         <script>
@@ -19,27 +19,217 @@
 
 	</head>
 	<body>
-        <section id="header">
+		<a id="mlh-trust-badge" href="https://mlh.io/seasons/na-2018/events" target="_blank">
+			<img src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg" alt="Major League Hacking 2018 Hackathon Season">
+		</a>
+        <section id="header" class="divider-dark">
             <div class="container">
                 <div class="hdr-text">
-                    <span class="prompt">></span>
+                    <span class="prompt"></span>
                     <span class="hacked">HackED</span>
                     <span id="cursor" class="cursor">|</span>
                 </div>
-                <p class="description">
+		<div>
+		    <img class="presented-by" src="img/presented-by.png" alt="Presented by Intuit" />
+		</div>
+                <p class="description accent">
                     January 27th-28th @
                     Donadeo Innovation Centre for Engineering
                 </p>
 
                 <div class="sponsorship_request">
-                    <a href="mailto:hacked@compeclub.com" class="button">Sponsor</a>
-                    <a href="https://goo.gl/forms/xCPx7Dv4sqAZL2JS2" class="button">Stay Updated</a>
-                    <a href="mailto:hacked@compeclub.com" class="button">Contact</a>
+                    <a href="mailto:hacked@compeclub.com" class="button accent">Sponsor</a>
+                    <a href="http://hacked2018.hackerearth.com" class="button">Register</a>
+                    <a href="mailto:hacked@compeclub.com" class="button accent">Contact</a>
                 </div>
             </div>
         </section>
+		<section id="about" class="divider">
+			<div class="marker-left background-accent"></div>
+			<div class="section-content">
+				<div class="section-title">BRING IT</div>
+				<p>Hackathons are for designing, creating, and building awesome projects. HackED is the premiere annual 24-hour hackathon from the Computer Engineering Club of the University of Alberta.</p>
+				<div class="small-title accent"><div class="accent-on-white">Apply Yourself</div></div>
+				<p>This event is for hackers who choose to learn because they can, and build because they love it. Bring your creativity and create solutions to the problems that you deem important and that you want to work towards. Bring your team (up to five) and work together to overcome challenges, whether that’s in software, hardware, design or strategy. HackED is about working together and applying yourself, your skills and your creativity.</p>
+				<div class="small-title accent"><div class="accent-on-white">We Got You</div></div>
+                <p>To help your journey, we take care of the details. HackED 2018 features more food, more space, more prizes and more swag. We provide you with three meals and a ton of snacks to power you through your hack. We’re expanding into the eighth floor of Donadeo ICE to give your team more room to think and collaborate. We’re spending over $1k on prizes, split between winning at the end, trivia throughout the night and some surprises too. And this year, we’re releasing custom HackED T-shirts for the first time in HackED history.</p>
+                <div class="small-title accent"><div class="accent-on-white">Our Friends</div></div>
+				<p>HackED 2018 also welcomes back our friends MLH from last year. Follow their <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">Code of Conduct</a> and enjoy their A-list stickers, free AWS credits, free APIs, free domains and especially the free hardware from their <a href="https://sponsor.mlh.io/directory/#hardware-lab" target="_blank">Hardware Lab</a>. Our friends from StartUp Edmonton are still here as well. Meet members of the community at the event that help us by volunteering and mentoring, make use of their <a href="http://www.startupedmonton.com/students/" target="_blank">student resources</a> after the hackathon too. If you’d like to join us as a volunteer or mentor reach out to us at <a href="mailto:hacked.compeclub.com" target="_blank">hacked.compeclub.com</a>. We’d be happy to bring you on to the team. </p>
+                <div class="small-title accent"><div class="accent-on-white">Bring it</div></div>
+                <p>Join us over the weekend of January 27 to hack your way to something new, whether you’re learning to code for the first time or flexing your hacking muscle trying to build the next big thing. Bring on the challenge, bring your ideas to life. </p>
+			</div>
+		</section>
+		<section id="map-section">
+			<div class="section-content">
+				<div class="section-title">Where to Go</div>
+				<div id="map"></div>
+			</div>
+		</section>
+		<section id="faq" class="divider-dark">
+			<div class="section-content">
+				<div class="section-title">FAQ</div>
+				<div class="faq-container">
+					<div class="faq-column-left">
+						<div class="question-section">
+							<div class="small-title accent">General</div>
+							<ul>
+								<li>
+									<p class="question">What happens at a hackathon?</p>
+									<p class="answer">For 24 hours, participants work together in teams of 1 to 5 people to build a project. Teams can work on hardware or software projects. There is no limit on creativity. This hackathon acts as a sort of incubator to your mini projects as it provides a focused time to work on your idea with mentors and workshops to help you along.</p>
+								</li>
+								<li>
+									<p class="question">Do I need to know programming?</p>
+									<p class="answer">Not at all! The hackathon’s purpose is to create a welcoming and supportive environment to learn. That works for any experience level, and any type of learning. The hackathon has plenty of mentors and resources to help you work on your hack. It’s the best place to try something new.</p>
+								</li>
+								<li>
+									<p class="question">Who organizes HackED?</p>
+									<p class="answer">HackED is an event by the Computer Engineering Club of the University of Alberta! This will be the fifth time running this event and the seventh hackathon organized overall.</p>
+								</li>
+								<li>
+									<p class="question">HackED is a competition but do I have to compete and present?</p>
+									<p class="answer">After hacking ends, judges will ask you to demo your work. However it is not mandatory, You can opt out before presentations begin on Sunday. That being said, presenting is highly recommended as part of the hackathon experience. Still, the most important part of this hackathon is that you come out of it having tried something new.</p>
+								</li>
+							</ul>
+						</div>
+						<div class="question-section">
+							<div class="small-title accent">Logistics</div>
+							<ul>
+								<li>
+									<p class="question">Do I have to be in Computer Engineering/Computer Science to participate in this hackathon?</p>
+									<p class="answer">Not at all! Any students interested in participating, regardless of skill, faculty or school is welcome to join.</p>
+								</li>
+								<li>
+									<p class="question">How’s the wifi situation?</p>
+									<p class="answer">The wifi situation is very good. We recommend you download your tools before hand just to avoid any potential network slowdowns.</p>
+								</li>
+								<li>
+									<p class="question">What should I bring?</p>
+									<p class="answer">Make sure to bring your laptop, charger and any other required tech you’ll need for your hack. You will find it helpful to bring along key items you would bring to a sleepover: pillows, blanket, toothbrush/toothpaste, deodorant, earphones, etc.</p>
+								</li>
+								<li>
+									<p class="question">What shouldn’t I bring?</p>
+									<p class="answer">Please do not bring any drugs or alcohol. If you are not sure about bringing a certain item, please send us a message ahead of time.</p>
+								</li>
+								<li>
+									<p class="question">Will there be food?</p>
+									<p class="answer">Of course! We will provide snacks and drinks (coffee is key!) throughout the event. Dinner will be provided saturday evening, as well as breakfast and lunch on Sunday. Please let us know if you have dietary restrictions - we’ll ensure you’re covered.</p>
+								</li>
+								<li>
+									<p class="question">Can I work remotely?</p>
+									<p class="answer">Please contact us at <a href="mailto:hacked@compeclub.com">hacked@compeclub.com</a>.</p>
+								</li>
+								<li>
+									<p class="question">What’s the best group size?</p>
+									<p class="answer">You can have any size group you want!</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="faq-column-right">
+						<div class="question-section">
+							<div class="small-title accent">Application</div>
+							<ul>
+								<li>
+									<p class="question">Where do I apply?</p>
+									<p class="answer">Right <a href="http://hacked2018.hackerearth.com" target="_blank">here</a> :)</p>
+								</li>
+								<li>
+									<p class="question">When is the application deadline?</p>
+									<p class="answer">January 26, 2018</p>
+								</li>
+								<li>
+									<p class="question">Who can apply?</p>
+									<p class="answer">Any student, new grad, and graduate students.</p>
+								</li>
+								<li>
+									<p class="question">Are there any fees?</p>
+									<p class="answer">Nope, entering is free!</p>
+								</li>
+							</ul>
+						</div>
+
+						<div class="question-section">
+							<div class="small-title accent">Hacking</div>
+							<ul>
+								<li>
+									<p class="question">I don’t have a team…</p>
+									<p class="answer">There will be opportunities for willing participants to look for, make or join a team before and at the hackathon through the Slack and after opening ceremonies. If you want to hack as a team, be sure to be proactive during these opportunities! Alternatively, if you have a team and want to find an additional member, these are also opportunities for your team.</p>
+								</li>
+								<li>
+									<p class="question">I don’t have any ideas…</p>
+									<p class="answer">Don’t let this detract you from participating! There is a lot of time and inspiration at the event! A good recommendation for coming up with ideas is to think about annoyances in your everyday life that you could potentially solve. Talk to your friends and family to help you!</p>
+								</li>
+								<li>
+									<p class="question">Any available resources?</p>
+									<p class="answer">Hardware resources and APIs and software are provided by our sponsors and MLH! Feel free to bring your own hardware resources such as monitors, Arduino boards, etc. We hope you can get all the tools necessary to complete your hack!</p>
+								</li>
+								<li>
+									<p class="question">How will judging work?</p>
+									<p class="answer">Judging will be done by hand picked Judges from the industry and they will use the following 50 point criteria to choose winners.</p>
+									<ul class="answer">
+									    <li>(10 Pts) Creativity/Originalty</li>
+									    <li>(10 Pts) Polish</li>
+									    <li>(10 Pts) Practicality/Usefulness</li>
+									    <li>(10 Pts) Technical Complexity</li>
+									    <li>(5 Pts) Wow Factor</li>
+									    <li>(5 Pts) Design</li>
+									</ul>
+								</li>
+								<li>
+									<p class="question">Are there prize categories?</p>
+									<p class="answer">There are no prize categories, prizes will be awarded to the top overall scoring teams.</p>
+								</li>
+							</ul>
+						</div>
+						<div class="question-section">
+							<div class="small-title accent">Help!</div>
+							<ul>
+								<li>
+									<p class="question">Can I volunteer instead?</p>
+									<p class="answer">Of course! All help will be throughly appreciated. Reach out to us at at <a href="mailto:hacked@compeclub.com">hacked@compeclub.com</a></p>
+								</li>
+								<li>
+									<p class="question">How can I sponsor this?</p>
+									<p class="answer">If you and your company are interested in getting your APIs in hackers hand’s, face-to-face mentorship with students and general outreach with swag, prizes and/or traditional sponsorship, please reach out to us at <a href="mailto:hacked@compeclub.com">hacked@compeclub.com</a> and we can work out how HackED can benefit you!</p>
+								</li>
+								<li>
+									<p class="question">404: Question Not Found</p>
+									<p class="answer">Please reach out to us at <a href="mailto:hacked@compeclub.com">hacked@compeclub.com</a>! We’re always willing to answer your needs :) We hope to help you be the best hacker you can be.</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="marker-right background-accent"></div>
+		</section>
+		<section id="sponsors">
+			<div class="section-content">
+				<div class="section-title">Sponsors</div>
+                <div class="section-content">
+                    <div class="small-title accent"><div class="accent-on-white">Sponsor a special weekend</div></div>
+                    <p>Each year, our sponsors help us unite our community of emerging developers, designers, makers and learners. Our sponsors empower our hackers to build something they're proud of.</p>
+                    <p>The HackED sponsorship team can be reached at: <a href="mailto:hacked@compeclub.com">hacked@compeclub.com</a></p>
+                </div>
+				<div class="sponsor-tier">
+					<div class="sponsor title"><a href="http://www.intuit.ca/intuit-products/index.jsp"><img src="img/sponsor-intuit.png"></a></div>
+				</div>
+				<div class="sponsor-tier">
+					<div class="sponsor gold"><a href="http://www.telus.com"><img src="img/sponsor-telus.jpg"></a></div>
+					<div class="sponsor gold"><a href="http://www.startupedmonton.com/"><img src="img/sponsor-startupedmonton.png"></a></div>
+					<div class="sponsor gold"><a href="https://getjobber.com/"><img src="img/sponsor-jobber.png"></a></div>
+					<div class="sponsor gold"><a href="http://www.atb.com/Pages/default.aspx"><img src="img/sponsor-atb.png"></a></div>
+					<div class="sponsor gold"><a href="http://www.devfacto.com"><img src="img/sponsor-devfacto.png"></a></div>
+				</div>
+				<div class="sponsor-tier">
+					<div class="sponsor silver"><a href="https://www.hackerearth.com/"><img src="img/sponsor-hackerearth.png"></a></div>
+				</div>
+			</div>
+        </div>
 
 		<script src="https://d3js.org/d3.v4.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBT0r-u8UHERZ7adEHLq8AujuJqtb4Dty4&callback=initMap" async defer></script>
+		<script src="js/mapStyles.js"></script>
 		<script src="js/main.js"></script>
     </body>
 </html>
